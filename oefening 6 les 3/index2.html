@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webprogammeren!</title>
+			<link href="css/stylesheet.css" rel="stylesheet" />
+			<meta charset="UTF-8">
+			<script type="text/javascript">
+
+			function mogelijkheid1(){
+			//in het gehele document vraag het element op met het volgende id
+			var g1 = document.getElementById('getal1').value;
+			var g2 = document.getElementById('getal2').value;
+			//var som = parseInt(g1) + parseInt(g2);
+			//alert("Sup " + voornaam + " " + achternaam);
+
+			//mogelijkheid 1(){ 
+			if (g1 == "") {
+				document.getElementById("uitkomst").innerHTML = "voer getal 1 in";
+
+
+			} else {
+
+				if (g2 == "") {
+				document.getElementById("uitkomst").innerHTML = "voer getal 2 in";
+				} else {
+				var som = parseInt(g1) + parseInt(g2);
+				document.getElementById("uitkomst").innerHTML = som;
+				}
+			 }
+			}
+
+			function mogelijkheid2(){
+			//in het gehele document vraag het element op met het volgende id
+			var g1 = document.getElementById('getal1').value;
+			var g2 = document.getElementById('getal2').value;
+			
+			if (g1 == "") {
+				document.getElementById("uitkomst").innerHTML = "voer getal 1 in";
+
+
+			}
+			if (g2 == "") {
+				document.getElementById("uitkomst").innerHTML = "voer getal 2 in";
+			} 
+			else if (g1 == "" && g2 == getal2.value) {
+				document.getElementById("uitkomst").innerHTML = "voer getal 1 in";
+			}
+
+			else {
+				var som = parseInt(g1) + parseInt(g2);
+				document.getElementById("uitkomst").innerHTML = som;
+			}
+
+			//document.getElementById("uitkomst").innerHTML = som;
+			
+		}
+
+			function mogelijkheid3(){
+			//in het gehele document vraag het element op met het volgende id
+			var g1 = document.getElementById('getal1').value;
+			var g2 = document.getElementById('getal2').value;
+			
+			if (g1 == "" || g2 == "") {
+				document.getElementById("uitkomst").innerHTML = "voer een getal in";
+
+			else {
+				var som = parseInt(g1) + parseInt(g2);
+				document.getElementById("uitkomst").innerHTML = som;
+			}
+
+			//document.getElementById("uitkomst").innerHTML = som;
+			
+		}
+			
+
+			</script>
+	</head>
+
+	<body>
+		<input type="text" id="getal1" value="" />
+		<input type="text" id="getal2" value="" />
+		<button onclick="mogelijkheid1()">first</button>
+		<button onclick="mogelijkheid2()">second</button>
+		<button onclick="mogelijkheid3()">third</button>
+
+		
+			<h1>Hallo</h1>
+			<p id="uitkomst">...</p>
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webprogammeren!</title>
+			<link href="css/stylesheet.css" rel="stylesheet" />
+			<meta charset="UTF-8">
+			<script type="text/javascript">
+
+			var aankoop = parseFloat(prompt("Wat is u aankoopbedrag"));
+			//parseFloat is getallen achter komma ook anders parseInt
+
+			if (aankoop >= 25.00) {
+				alert("U aankoop wordt gratis bezorgd");
+			}
+			if (aankoop < 25.00) {
+				aankoop = aankoop + 3.95;
+				alert("U aankoop wordt bezorgd met 3.95 euro extra aan verzendkosten. U eindbedrag wordt " + aankoop + " euro");
+			}
+
+			</script>
+	</head>
+
+	<body>
+
+		<div>
+			<h1>Hallo</h1>
+		</div>
+
+	</body>
+
+</html>
+	

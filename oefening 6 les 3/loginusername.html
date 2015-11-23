@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webprogammeren!</title>
+			<link href="css/stylesheet.css" rel="stylesheet" />
+			<meta charset="UTF-8">
+			<script type="text/javascript">
+
+			var accountUsername = "Hekman";
+			var accountPassword = "adalovelace";
+
+			function login(){
+				//haal gegevens op
+				var username = document.getElementById("username").value;
+				var pass = document.getElementById("password").value;
+
+			}
+
+			
+			if (username == "") {
+				document.getElementById("message").innerHTML = "voer username in";
+
+
+			}
+			if (pass == "") {
+				document.getElementById("message").innerHTML = "voer wachtwoord in";
+			} 
+			else {
+				if (username == "" && pass == pass.value) {
+				document.getElementById("message").innerHTML = "voer username in";
+				}
+
+			 	if (username == accountUsername) {
+			 		if(pass == accountPassword) {
+			 			document.getElementById("message").innerHTML = "ingelogd!";
+			 		}
+			 		else{
+			 			document.getElementById("message").innerHTML = "verkeerd wachtwoord!";
+			 		}
+			 	}
+			 	else {
+			 		document.getElementById("message").innerHTML = "verkeerde gebruikersnaam";
+			 	}
+
+			 	}
+			
+			}
+
+
+
+			</script>
+	</head>
+
+	<body>
+		<input type="text" id="username" value="" />
+		<input type="text" id="password" value="" />
+		<button onclick="login()">Inloggen</button>
+
+		
+			<h1>Hallo</h1>
+			<p id="message">...</p>
+
+	</body>
+
+</html>
